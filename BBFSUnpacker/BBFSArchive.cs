@@ -69,8 +69,6 @@ public class BBFSArchive
 
         TocData = data.AsSpan(0).ToArray();
 
-        File.WriteAllBytes(@"C:\Users\nenkai\Desktop\test.bin", data);
-
         // Entering TOC
         sr.Position = 0x14;
         HashSize = sr.ReadInt32();
